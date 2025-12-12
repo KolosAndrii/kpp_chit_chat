@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="google-signin-client_id" content="695427828303-9e128pbvg69mokjlpjh0n1pjn8nuoc0e.apps.googleusercontent.com">
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="chat_lab_kpp">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>chat_lab_kpp</title>
+  <link rel="manifest" href="manifest.json">
+</head> 
+<body>
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-analytics-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyA01xiOZD0I3dJDgH0OCAkbTTFHV1l1Eg8",
+      authDomain: "kpplabchat.firebaseapp.com",
+      projectId: "kpplabchat",
+      storageBucket: "kpplabchat.firebasestorage.app",
+      messagingSenderId: "695427828303",
+      appId: "1:695427828303:web:dc1d04f2a29f06ab6d783a",
+      measurementId: "G-5RQ5C71RQD"
+    };
+    
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    
+    // Initialize Analytics - ОСЬ ЦЕ ДОДАНО!
+    firebase.analytics();
+  </script>
+  
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
